@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./imagens/imagemfundopg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.img-logo {
+    background: rgba(20, 20, 20, 0.80);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.texto-1 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    background: rgba(20, 20, 20, 0.80);
+    border-radius: 27px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 50px auto;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.botao-flores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.botao, .botao-voltar {
+    padding: 10px 20px;
+    width: 80%;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.botao:hover, .botao-voltar:hover {
+    background-color: gray;
+}
+
+.titulo-login {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.link-cadastre {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.link-cadastre:hover {
+    color: gray;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.fotos-sushi, .video-shopping {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.fotos-sushi img, .video-shopping video {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .conteudo {
+        flex-direction: row;
+        font-size: 30px;
+        padding: 50px;
+    }
+    
+    .botao-flores {
+        flex-direction: row;
+    }
+
+    .botao, .botao-voltar {
+        width: 40%;
+    }
+
+    .fotos-sushi, .video-shopping {
+        flex-direction: row;
+    }
+}
+

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;}
+
+body {
+    background-image: url(./imagens/photo-1611784599736-0ab934a3245a.jpeg);  
+    background-size: cover;       
+    background-position: center;   
+    background-attachment: fixed;   
+    margin: 0;                     
+    height: 100vh;                 
+    font-family: "Istok Web", sans-serif;
+}
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+body.fade-out {
+    opacity: 0; /* Tornar o corpo invisível antes de sair da página */
+}
+
+hr {
+    border: 3px solid red;
+    width: 50%;
+    border-radius: 5px;
+    margin-top: -20px;
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.img-logo {
+    background: rgba(20, 20, 20, 0.80); 
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;       
+}
+
+.texto-1 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto; 
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    border-radius: 27px;
+    background: rgba(20, 20, 20, 0.80);  
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 100px;
+}
+
+.texto {
+    display: flex;
+    margin-top: 5px;
+    color: white;
+    margin-left: 10px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.botao-flores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 50px; /* Mantém o espaçamento do topo */
+}
+
+.botao {
+    padding: 10px 70px; /* Aumenta a área interna do botão */
+    width: 40%; /* Aumenta a largura dos botões */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px; /* Bordas mais arredondadas */
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: white; 
+    color: black;
+    border: none; 
+    cursor: pointer;
+    font-size: 18px; /* Aumenta o tamanho do texto */
+}
+
+.botao-voltar {
+    padding: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: white; 
+    color: black;
+    border: none; 
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 100px ;
+}
+
+.botao:hover {
+    background-color: gray;
+}
+
+.botao-voltar:hover {
+    background-color: gray;
+}
+
+.titulo-login {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.texto {
+    padding-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.link-cadastre {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;  
+}
+
+.link-cadastre:hover {
+    color: gray; 
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    margin-top: 112px;
+    text-align: center; 
+}

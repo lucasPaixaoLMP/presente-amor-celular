@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINANC</title>
+    <link rel="stylesheet" href="./estilopg2-flores1.css">
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+        document.getElementById('transitionButton').addEventListener('click', function() {
+        document.body.classList.add('fade-out'); // Aplica a transição de fade-out
+
+        // Espera 0.5s (tempo da transição) antes de redirecionar
+        setTimeout(function() {
+            window.location.href = 'outra-pagina.html'; // Redireciona para a nova página
+        }, 500); // 500ms é o tempo da transição
+    });
+    </script>
+    
+</head>
+<body>
+    <div class="img-logo">
+        <h1>PARABENS MEU AMOR</h1>
+    </div>   
+    <section class="formulario-login">
+        <h1 class="titulo-login">ROSAS VERMELHAS</h1>
+        <p class="conteudo">As rosas vermelhas simbolizam amor intenso, paixão, desejo e respeito. São tradicionalmente associadas ao romance e representam um amor profundo e duradouro.</p>
+        <div class="botao-flores">
+        <a class="botao" href="./pg2-flores1.html">VOLTAR</a>
+        <a class="botao" href="./pg2-flores2.html">PROXIMO</a>
+        </div>
+    </section>
+    <footer>
+        <h1>PRESENTE AMOR</h1>
+    </footer>
+</body>
+</html>

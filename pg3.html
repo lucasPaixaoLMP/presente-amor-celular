@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINANC</title>
+    <link rel="stylesheet" href="./estilopg3.css">
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+        document.getElementById('transitionButton').addEventListener('click', function() {
+        document.body.classList.add('fade-out'); // Aplica a transição de fade-out
+
+        // Espera 0.5s (tempo da transição) antes de redirecionar
+        setTimeout(function() {
+            window.location.href = 'outra-pagina.html'; // Redireciona para a nova página
+        }, 500); // 500ms é o tempo da transição
+    });
+    </script>
+    
+</head>
+<body>
+    <div class="img-logo">
+        <h1>PARABENS MEU AMOR</h1>
+    </div>
+    <a class="botao-voltar" href="./pg2.html">VOLTAR</a>   
+    <section class="formulario-login">
+        <h1 class="titulo-login">O QUE ESSAS FLORES RERPRESENTAM PRA GENTE?</h1>
+        <p class="conteudo">Sabe o que essas flores representam para gente? a rosa representa nosso amor intenso que nunca acabou, minha admiração por voce e a pessoa extraodinario que voce é para mim, os girassois significa nosso recomeço, que assim como o os girassois sempre ficam voltados ao sol, nos permite crescer, aprender com nossos erros e sempre florescer novamente, em direção a um futuro mais iluminado.</p> 
+        <a class="botao" href="./pg4.html">PROXIMO</a>
+    </section>
+    <footer>
+        <h1>PRESENTE AMOR</h1>
+    </footer>
+</body>
+</html>
